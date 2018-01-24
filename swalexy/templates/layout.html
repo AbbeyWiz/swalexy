@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OlaOluwaseun</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}" type="text/css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Indie+Flower|Lobster|Lovers+Quarrel|Parisienne|Playfair+Display|Shadows+Into+Light|VT323');
+    </style>
+  </head>
+
+  <body id="home">
+
+    <header>
+      <div class="wrap">
+        <div class="logo">
+          <a href="#" style="font-family: 'Lobster', cursive">
+            'Seun
+            <i class="fa fa-heart" style="animation:pulse 0.7s infinite; -webkit-animation:pulse 0.7s infinite"></i>
+            'Wale
+          </a>
+        </div>
+
+        <div class="menu-icon hamburger">
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Couple's Profile</a>
+            </li>
+            <li class="menu__item">
+              <a href="/events" class="menu__link">Events & Programmes</a>
+            </li>
+            <li class="menu__item">
+              <a href="/gallery" class="menu__link">Gallery</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">People</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Wishes & Prayers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {% block menu %}
+    <!-- menu goes here -->
+    {% endblock %} {% block content %} {% endblock %}
+    <!-- footer template  -->
+    {% block footer %} {% endblock %}
+
+    <footer>
+      This is my footer
+    </footer>
+
+    <script src="{% static 'scripts/jquery.js' %}">
+    </script>
+    <script src="{% static 'scripts/main.js' %}">
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "punchlite",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Biodun Olasebikan <biodunolasebikan@gmail.com.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
+    "popper.js": "^1.12.3",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2",
+    "bLazy": "blazy#^1.8.2",
+    "owl.carousel": "2.1.6",
+    "owl.carousel2.thumbs": "^0.1.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    }
+  }
+}
